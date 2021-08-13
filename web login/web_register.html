@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        #body{
+            background-color: rgb(204, 182, 140);
+        }
+        #register{
+            font-size: 350%;
+        }
+        #form{
+            font-size: 150%;
+            border: 5px solid rgb(255, 255, 255);
+            background-color: rgb(58, 57, 54);
+            color: rgb(255, 255, 255);
+            width: 35%;
+        }
+    </style>
+</head>
+<body id="body">
+    <h2 id="register"  >Register</h2>
+    <hr>
+    <br>
+    <form id="form">
+        <div>
+            <label for="User">Username</label>
+            <input type="text" name="User" placeholder="A-Z,a-z " required>
+        </div>
+        <div>
+            <label for="passwold">Passwold</label>
+            <input type="password" name="passwold" placeholder="A-Z,a-z,0-9"required>
+            <input type="password" name="passwold" placeholder="กรอก passwold อีกครั้ง"required>
+        </div>
+        </div>
+        <div>
+            <label for="emali">Emali</label>
+            <input type="email" name="emali" placeholder="โปรดกรอก email" required >
+        </div>
+        <div>
+            <label for="age">อายุ</label>
+            <input type="number" name="age" min="12" max="99" value="12"required>
+        </div>
+        <div>
+            <label for="data">เพศ</label>
+            <input type="radio" name="gender">ชาย
+            <input type="radio" name="gender">หญิง
+            <input type="radio" name="gender">ไม่ระบุ
+            <input type="radio" name="gender">อื่นๆ
+            <input type="text" name="data">
+        </div>
+        <div>
+            <label for="data">ระดับการศึกษา</label>
+            <select name="edu" >
+                <option value="ว่าง" >โปรดเลือกการศึกษา</option>
+                <option value="มัธยมศึกษา" >มัธยมศึกษา</option>
+                <option value="นักศึกษา">นักศึกษา</option>
+            </select>
+            <label for="data">ปีที่</label>
+            <input type="number"  name="ปี" min="1" max="6" value="1">
+        </div>
+        <div>
+            <label for="data">เบอร์โทรศัพท์</label>
+            <input type="tel" name="tel" placeholder="0xx-xxx-xxxx"required>
+        </div>
+        <div>
+        <br>
+        <div>
+            <input type="submit" value="บันทึก">
+            <input type="reset" value="ล้างข้อมูลทั้งหมด">
+        </div>
+    </form>
+</body>
+</html>
